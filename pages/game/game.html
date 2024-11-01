@@ -29,6 +29,8 @@
             <img width="100px" style="margin-right: 180px;" src="../../images/logo.png">
          </div>
          <h1 id="heading">KA Supermarket Game</h1>
+         <p class="coins" style="font-weight: 500; margin-right: 5px; margin-left: 20px;">Coins: <span
+               id="coins-number"></span></p>
          <p class="level" style="font-weight: 500; margin-left: 20px;">Level<span id="levels-number"></span></p>
          <div class="container">
             <div class="Loading"></div>
@@ -213,15 +215,18 @@
             <h2 style="text-align: center; margin-bottom: 1px; margin-top: 1px">ABOUT US
             </h2>
             <div class="line"></div>
-            <div class="main">
+            <div class="main" style="text-align: center; margin-top: 70px; ">
                <img style="border-radius: 50%; border-style: solid; border-width: 5px; border-color: #fff;"
                   src="../../images/K.jpg" width="120px" title="Khasia Alim" onContextMenu="return false;">
                <h2 style="margin-top: 0px; margin-bottom: 0px;">Khasia Alim</h2>
                <p style="margin-top: 0px;">24/12 ❘ 🇵🇰</p>
-               <i class="fa-solid fa-envelope"></i>
-               <i class="fa-brands fa-github"></i>
-               <i class="fa-brands fa-linkedin"></i>
-               <i class="fa-brands fa-instagram"></i>
+               <hr />
+               <a href="mailto:khasiaalim241211@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+               <a href="https://github.com/KhasiaAlim" target="_blank"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/khasia-alim-4b57342aa/" target="_blank"><i
+                     class="fa-brands fa-linkedin"></i></a>
+               <a href="https://www.instagram.com/khasiaalim/" target="_blank"><i
+                     class="fa-brands fa-instagram"></i></a>
             </div>
          </div>
          <div class="overlay2 hidden"></div>
@@ -233,13 +238,206 @@
          <p style="font-weight: 700;">Inventory</p>
          <hr />
          <div class="items">
-            <div class="inventory-item1"></div>
+            <div class="inventory-item1 hidden">
+               <img width="150px" src="../../images/items/1.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 100</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Potato</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item2 hidden">
+               <img width="150px" src="../../images/items/2.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 100</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Salt</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item3 hidden">
+               <img width="150px" src="../../images/items/3.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 150</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Banana</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item4 hidden">
+               <img width="150px" src="../../images/items/4.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Flour</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item5 hidden">
+               <img width="150px" src="../../images/items/5.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Green Chilli</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item6 hidden">
+               <img width="150px" src="../../images/items/6.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Mango</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item7 hidden">
+               <img width="150px" src="../../images/items/7.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Onion</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item8 hidden">
+               <img width="150px" src="../../images/items/8.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Sugar</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item9 hidden">
+               <img width="150px" src="../../images/items/9.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Tomato</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item10 hidden">
+               <img width="150px" src="../../images/items/10.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 250</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Orange</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item11 hidden">
+               <img width="150px" src="../../images/items/11.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Apple</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item12 hidden">
+               <img width="150px" src="../../images/items/12.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Mayonnaise</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item13 hidden">
+               <img width="150px" src="../../images/items/13.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Chilli Sauce</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item14 hidden">
+               <img width="150px" src="../../images/items/14.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Soya Sauce</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item15 hidden">
+               <img width="150px" src="../../images/items/15.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 400</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Ketchup</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item16 hidden">
+               <img width="150px" src="../../images/items/16.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 700</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Lemon</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item17 hidden">
+               <img width="150px" src="../../images/items/17.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 1000</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Olive Oil</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item18 hidden">
+               <img width="150px" src="../../images/items/18.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 1000</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Coffee</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item19 hidden">
+               <img width="150px" src="../../images/items/19.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 2000</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Tea</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
+            <div class="inventory-item20 hidden">
+               <img width="150px" src="../../images/items/20.png"
+                  style=" display: block; margin-left: auto; margin-right: auto;">
+               <div class="line-shop-modal"></div>
+               <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 2500</p>
+               <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Meat</p>
+               <div class="line-shop-modal"></div>
+               <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
+            </div>
          </div>
       </div>
       <div class="customers column">
          <p style="font-weight: 700;">Customers</p>
          <hr />
-         <div id="customers-btn-1"></div>
+         <button class="customers-btn-1 customer-btn hidden">Customer
+            <div id="items"></div>
+         </button>
+         <button class="customers-btn-2 customer-btn hidden">Customer
+            <div id="items"></div>
+         </button>
+         <button class="customers-btn-3 customer-btn hidden">Customer
+            <div id="items"></div>
+         </button>
+         <button class="customers-btn-4 customer-btn hidden">Customer
+            <div id="items"></div>
+         </button>
+         <button class="customers-btn-5 customer-btn hidden">Customer
+            <div id="items"></div>
+         </button>
       </div>
    </div>
 

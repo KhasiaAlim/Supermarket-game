@@ -26,7 +26,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; 
+    z-index: 0;
 }
 
 #bg-video {
@@ -80,7 +81,6 @@ body {
     padding: 5px 16px;
     position: relative;
     text-decoration: none;
-    user-select: none;
     cursor: pointer;
 }
 
@@ -145,9 +145,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 440px;
+    z-index: 2;
 }
 
-.modal1, .modal2 {
+.modal1 {
     width: 650px;
     height: 500px;
     padding: 1.3rem;
@@ -159,10 +160,25 @@ body {
     border: 1px solid #5b0000;
     border-radius: 15px;
     overflow: scroll;
-    z-index: 2;
+    z-index: 4;
 }
 
-.overlay1, .overlay2 {
+.modal2 {
+    width: 650px;
+    height: 500px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    background-color: #910000;
+    border: 1px solid #5b0000;
+    border-radius: 15px;
+    z-index: 4; 
+}
+
+.overlay1,
+.overlay2 {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -172,7 +188,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
-    z-index: 1;
+    z-index: 3;
 }
 
 .hidden {
@@ -250,4 +266,82 @@ body {
 .lock {
     background-color: #353333;
     cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-solid {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.fa-brands {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 390px;
+    position: relative;
+    z-index: 2;
+    overflow-y: auto; 
+}
+
+.inventory-item1,
+.inventory-item2,
+.inventory-item3,
+.inventory-item4,
+.inventory-item5,
+.inventory-item6,
+.inventory-item7,
+.inventory-item8,
+.inventory-item9,
+.inventory-item10,
+.inventory-item11,
+.inventory-item12,
+.inventory-item13,
+.inventory-item14,
+.inventory-item15,
+.inventory-item16,
+.inventory-item17,
+.inventory-item18,
+.inventory-item19,
+.inventory-item20 {
+    width: 160px;
+    padding: 1.3rem;
+    height: 300px;
+    color: #910000;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 10px; 
+    border-color: #910000;
+    border-width: 50%;
+    border-style: solid;
+}
+
+.customer-btn {
+    background-color: #910000;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    outline: none;
+    padding: 2px 70px;
+    display: block;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 30px;
 }
