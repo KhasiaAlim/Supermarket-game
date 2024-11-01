@@ -1,0 +1,5 @@
+# Ignore Firebase config file
+firebase-config.json
+
+# Ignore the files starting with firebase
+firebase/

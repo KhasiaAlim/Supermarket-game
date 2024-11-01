@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA Supermarket Game</title>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>KA SUPERMARKET GAME</h1>
-    
-    <script src="app.js"></script>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/background.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="content">
+        <h1>KA SUPERMARKET GAME</h1>
+        <div id="buttons">
+            <button id="btn1" style="margin-right: 10px;"><a href="pages/register.html" style="text-decoration: none; color: var(---MAIN-COLOR-PAGE);" target="_blank">Register</a></button>
+            <button id="btn2"><a href="pages/login.html" style="text-decoration: none; color: var(---MAIN-COLOR-PAGE);" target="_blank">Login</a></button>
+        </div>
+    </div>
+    <p id="important">Note: THIS GAME IS ONLY FOR COMPUTER USERS!</p>
 </body>
+
 </html>

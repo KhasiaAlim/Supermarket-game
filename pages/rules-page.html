@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions - KA Supermarket Game</title>
+    <!-- LINKS -->
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/rules.css">
+</head>
+
+<body>
+    <!-- BACKGROUND VIDEO -->
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="../videos/background.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- RULES - BOX -->
+    <div id="position">
+        <div class="wrapper">
+            <h1 style="margin-bottom: 10px; margin-top: 10px;">Rules</h1>
+            <hr />
+            <!-- RULES -->
+            <ol id="lists" style="text-align: left;">
+                <li>The game has a total of 20 levels.</li>
+                <li>Each level unlocks new items and rewards you with coins, which can be used for rebirths.</li>
+                <li>The more customers you serve, the more coins and rebirths you earn.</li>
+                <li>Completing all 20 levels grants you one rebirth.</li>
+                <li>Items unlock as you progress through higher levels.</li>
+                <li>You will need to log in again if you want to play with the latest progress you’ve made.</li>
+                <li>ATTENTION: If you do not play for 90 days, your account will be deleted.</li>
+            </ol>
+        </div>
+        <div id="next-button" class="next-button" style="display: none; margin-top: 10px;"><a href="../pages/game/game.html" style="text-decoration: none; color: #500000; cursor: pointer;">Next</a></div>
+    </div>
+    <!-- NOTE -->
+    <p id="important">Note: THIS GAME IS ONLY FOR COMPUTER USERS!</p>
+
+    <!-- FIREBASE -->
+     
+    <script src="../js/rules.js"></script>
+</body>
+
+</html>

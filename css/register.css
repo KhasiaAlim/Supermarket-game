@@ -1,0 +1,137 @@
+/* -------- FONT-FAMILY -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -------- COLORS -------- */
+
+:root {
+    ---MAIN-COLOR-PAGE: #500000;
+    ---MAIN-COLOR-FONT: #ffffff;
+}
+
+/* -------- STYLING -------- */
+
+body {
+    background-color: var(---MAIN-COLOR-PAGE);
+    color: var(---MAIN-COLOR-FONT);
+    font-family: "Poppins", sans-serif;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.wrapper {
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background: #7e0200;
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: var(---MAIN-COLOR-PAGE);
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: var(---MAIN-COLOR-PAGE);
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .field input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #7e0200;
+    transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+#position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+#important {
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: max-content;
+}

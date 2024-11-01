@@ -1,0 +1,253 @@
+/* -------- FONT-FAMILY -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -------- COLORS -------- */
+
+:root {
+    ---MAIN-COLOR-PAGE: #500000;
+    ---MAIN-COLOR-FONT: #ffffff;
+}
+
+/* -------- STYLING -------- */
+
+
+body {
+    background-color: var(---MAIN-COLOR-PAGE);
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.header {
+    color: #910000;
+    background-color: #fff;
+    height: 300%;
+    display: block;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 120px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.shop,
+.about-us {
+    background-color: #910000;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0;
+    outline: none;
+    padding: 5px 16px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.Loading {
+    position: relative;
+    height: 5px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Loading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: load 5s infinite;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+        background: #a28089;
+    }
+
+    25% {
+        width: 40%;
+        background: #a0d2eb;
+    }
+
+    50% {
+        width: 60%;
+        background: #ffa8b6;
+    }
+
+    75% {
+        width: 75%;
+        background: #d0bdf4;
+    }
+
+    100% {
+        width: 100%;
+        background: #494d5f;
+    }
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.inventory,
+.customers {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 440px;
+}
+
+.modal1, .modal2 {
+    width: 650px;
+    height: 500px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    background-color: #910000;
+    border: 1px solid #5b0000;
+    border-radius: 15px;
+    overflow: scroll;
+    z-index: 2;
+}
+
+.overlay1, .overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.line {
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+.shop-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item16,
+.item17,
+.item18,
+.item19,
+.item20 {
+    width: 160px;
+    padding: 1.3rem;
+    height: 300px;
+    color: #910000;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.line-shop-modal {
+    background-color: #910000;
+    height: 1px;
+    width: 100%;
+}
+
+.items-btn {
+    background-color: #910000;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    outline: none;
+    padding: 2px 70px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.lock {
+    background-color: #353333;
+    cursor: not-allowed;
+}
