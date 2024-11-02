@@ -56,15 +56,6 @@ body {
     align-items: center;
 }
 
-.container {
-    position: relative;
-    width: 120px;
-    padding: 8px 8px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background: #fff;
-}
-
 .shop,
 .about-us {
     background-color: #910000;
@@ -82,53 +73,6 @@ body {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-}
-
-.Loading {
-    position: relative;
-    height: 5px;
-    background: #f1f1f1;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.Loading:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-    animation: load 5s infinite;
-}
-
-@keyframes load {
-    0% {
-        width: 0;
-        background: #a28089;
-    }
-
-    25% {
-        width: 40%;
-        background: #a0d2eb;
-    }
-
-    50% {
-        width: 60%;
-        background: #ffa8b6;
-    }
-
-    75% {
-        width: 75%;
-        background: #d0bdf4;
-    }
-
-    100% {
-        width: 100%;
-        background: #494d5f;
-    }
 }
 
 .game-container {
@@ -327,7 +271,7 @@ a {
     border-style: solid;
 }
 
-.customer-btn {
+#customer-slot-1>button, #customer-slot-2>button, #customer-slot-3>button, #customer-slot-4>button, #customer-slot-5>button {
     background-color: #910000;
     font-weight: 900;
     border-radius: 8px;

@@ -30,12 +30,11 @@
          </div>
          <h1 id="heading">KA Supermarket Game</h1>
          <p class="coins" style="font-weight: 500; margin-right: 5px; margin-left: 20px;">Coins: <span
-               id="coins-number"></span></p>
-         <p class="level" style="font-weight: 500; margin-left: 20px;">Level<span id="levels-number"></span></p>
-         <div class="container">
-            <div class="Loading"></div>
-         </div>
-         <p class="rebirth" style="font-weight: 500; margin-right: 5px;">Rebirth: <span id="rebirths-number"></span></p>
+               id="coins-number"> </span></p>
+         <p class="level" style="font-weight: 500; margin-left: 20px; margin-right: 20px;">Level:<span
+               id="levels-number"> </span></p>
+         <p class="rebirth" style="font-weight: 500; margin-right: 20px;">Rebirth: <span id="rebirths-number"> </span>
+         </p>
          <!-- MODAL - 1 -->
          <!-- SHOP - BUTTON -->
          <button class="shop" style="margin-right: 10px;">Shop</button>
@@ -50,7 +49,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 100</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Potato</p>
-                  <button class="items-btn">Buy</button>
+                  <button class="items-btn" data-item-btn="Potato" onclick="buyItem('Potato', 100)">Buy</button>
                </div>
                <div class="item2">
                   <img width="150px" src="../../images/items/2.png"
@@ -58,7 +57,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 100</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Salt</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Salt" onclick="buyItem('Salt', 100)">Buy</button>
                </div>
                <div class="item3">
                   <img width="150px" src="../../images/items/3.png"
@@ -66,7 +65,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 150</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Banana</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Banana" onclick="buyItem('Banana', 150)">Buy</button>
                </div>
                <div class="item4">
                   <img width="150px" src="../../images/items/4.png"
@@ -74,7 +73,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Flour</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Flour" onclick="buyItem('Flour', 200)">Buy</button>
                </div>
                <div class="item5">
                   <img width="150px" src="../../images/items/5.png"
@@ -82,7 +81,8 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Green Chilli</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Green Chilli"
+                     onclick="buyItem('Green Chilli', 200)">Buy</button>
                </div>
                <div class="item6">
                   <img width="150px" src="../../images/items/6.png"
@@ -90,7 +90,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Mango</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Mango" onclick="buyItem('Mango', 200)">Buy</button>
                </div>
                <div class="item7">
                   <img width="150px" src="../../images/items/7.png"
@@ -98,7 +98,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Onion</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Onion" onclick="buyItem('Onion', 200)">Buy</button>
                </div>
                <div class="item8">
                   <img width="150px" src="../../images/items/8.png"
@@ -106,7 +106,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Sugar</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Sugar" onclick="buyItem('Sugar', 200)">Buy</button>
                </div>
                <div class="item9">
                   <img width="150px" src="../../images/items/9.png"
@@ -114,7 +114,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 200</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Tomato</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Tomato" onclick="buyItem('Tomato', 200)">Buy</button>
                </div>
                <div class="item10">
                   <img width="150px" src="../../images/items/10.png"
@@ -122,7 +122,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 250</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Orange</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Orange" onclick="buyItem('Orange', 250)">Buy</button>
                </div>
                <div class="item11">
                   <img width="150px" src="../../images/items/11.png"
@@ -130,7 +130,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Apple</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Apple" onclick="buyItem('Apple', 300)">Buy</button>
                </div>
                <div class="item12">
                   <img width="150px" src="../../images/items/12.png"
@@ -138,7 +138,8 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Mayonnaise</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Mayonnaise"
+                     onclick="buyItem('Mayonnaise', 300)">Buy</button>
                </div>
                <div class="item13">
                   <img width="150px" src="../../images/items/13.png"
@@ -146,7 +147,8 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Chilli Sauce</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Chilli Sauce"
+                     onclick="buyItem('Chilli Sauce', 300)">Buy</button>
                </div>
                <div class="item14">
                   <img width="150px" src="../../images/items/14.png"
@@ -154,7 +156,8 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 300</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Soya Sauce</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Soya Sauce"
+                     onclick="buyItem('Soya Sauce', 300)">Buy</button>
                </div>
                <div class="item15">
                   <img width="150px" src="../../images/items/15.png"
@@ -162,7 +165,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 400</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Ketchup</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Ketchup" onclick="buyItem('Ketchup', 400)">Buy</button>
                </div>
                <div class="item16">
                   <img width="150px" src="../../images/items/16.png"
@@ -170,7 +173,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 700</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Lemon</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Lemon" onclick="buyItem('Lemon', 700)">Buy</button>
                </div>
                <div class="item17">
                   <img width="150px" src="../../images/items/17.png"
@@ -178,7 +181,8 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 1000</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Olive Oil</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Olive Oil"
+                     onclick="buyItem('Olive Oil', 1000)">Buy</button>
                </div>
                <div class="item18">
                   <img width="150px" src="../../images/items/18.png"
@@ -186,7 +190,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 1000</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Coffee</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Coffee" onclick="buyItem('Coffee', 1000)">Buy</button>
                </div>
                <div class="item19">
                   <img width="150px" src="../../images/items/19.png"
@@ -194,7 +198,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 2000</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Tea</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Tea" onclick="buyItem('Tea', 2000)">Buy</button>
                </div>
                <div class="item20">
                   <img width="150px" src="../../images/items/20.png"
@@ -202,7 +206,7 @@
                   <div class="line-shop-modal"></div>
                   <p class="price" style="margin-bottom: 5px;"><b>Price:</b> 2500</p>
                   <p class="item-name" style="margin-top: 0px;"><b>Item Name:</b> Meat</p>
-                  <button class="items-btn lock">Buy</button>
+                  <button class="items-btn lock" data-item-btn="Meat" onclick="buyItem('Meat', 2500)">Buy</button>
                </div>
             </div>
          </div>
@@ -238,7 +242,7 @@
          <p style="font-weight: 700;">Inventory</p>
          <hr />
          <div class="items">
-            <div class="inventory-item1 hidden">
+            <div class="inventory-item1" data-item-name="Potato">
                <img width="150px" src="../../images/items/1.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -247,7 +251,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item2 hidden">
+            <div class="inventory-item2 hidden" data-item-name="Salt">
                <img width="150px" src="../../images/items/2.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -256,7 +260,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item3 hidden">
+            <div class="inventory-item3 hidden" data-item-name="Banana">
                <img width="150px" src="../../images/items/3.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -265,7 +269,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item4 hidden">
+            <div class="inventory-item4 hidden" data-item-name="Flour">
                <img width="150px" src="../../images/items/4.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -274,7 +278,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item5 hidden">
+            <div class="inventory-item5 hidden" data-item-name="Green Chilli">
                <img width="150px" src="../../images/items/5.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -283,7 +287,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item6 hidden">
+            <div class="inventory-item6 hidden" data-item-name="Mango">
                <img width="150px" src="../../images/items/6.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -292,7 +296,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item7 hidden">
+            <div class="inventory-item7 hidden" data-item-name="Onion">
                <img width="150px" src="../../images/items/7.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -301,7 +305,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item8 hidden">
+            <div class="inventory-item8 hidden" data-item-name="Sugar">
                <img width="150px" src="../../images/items/8.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -310,7 +314,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item9 hidden">
+            <div class="inventory-item9 hidden" data-item-name="Tomato">
                <img width="150px" src="../../images/items/9.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -319,7 +323,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item10 hidden">
+            <div class="inventory-item10 hidden" data-item-name="Orange">
                <img width="150px" src="../../images/items/10.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -328,7 +332,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item11 hidden">
+            <div class="inventory-item11 hidden" data-item-name="Apple">
                <img width="150px" src="../../images/items/11.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -337,7 +341,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item12 hidden">
+            <div class="inventory-item12 hidden" data-item-name="Mayonnaise">
                <img width="150px" src="../../images/items/12.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -346,7 +350,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item13 hidden">
+            <div class="inventory-item13 hidden" data-item-name="Chilli Sauce">
                <img width="150px" src="../../images/items/13.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -355,7 +359,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item14 hidden">
+            <div class="inventory-item14 hidden" data-item-name="Soya Sauce">
                <img width="150px" src="../../images/items/14.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -364,7 +368,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item15 hidden">
+            <div class="inventory-item15 hidden" data-item-name="Ketchup">
                <img width="150px" src="../../images/items/15.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -373,7 +377,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item16 hidden">
+            <div class="inventory-item16 hidden" data-item-name="Lemon">
                <img width="150px" src="../../images/items/16.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -382,7 +386,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item17 hidden">
+            <div class="inventory-item17 hidden" data-item-name="Olive Oil">
                <img width="150px" src="../../images/items/17.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -391,7 +395,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item18 hidden">
+            <div class="inventory-item18 hidden" data-item-name="Coffee">
                <img width="150px" src="../../images/items/18.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -400,7 +404,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item19 hidden">
+            <div class="inventory-item19 hidden" data-item-name="Tea">
                <img width="150px" src="../../images/items/19.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -409,7 +413,7 @@
                <div class="line-shop-modal"></div>
                <p class="quantity"><b>Quantity:</b> <span id="number-quantity"></span></p>
             </div>
-            <div class="inventory-item20 hidden">
+            <div class="inventory-item20 hidden" data-item-name="Meat">
                <img width="150px" src="../../images/items/20.png"
                   style=" display: block; margin-left: auto; margin-right: auto;">
                <div class="line-shop-modal"></div>
@@ -423,27 +427,34 @@
       <div class="customers column">
          <p style="font-weight: 700;">Customers</p>
          <hr />
-         <button class="customers-btn-1 customer-btn hidden">Customer
-            <div id="items"></div>
-         </button>
-         <button class="customers-btn-2 customer-btn hidden">Customer
-            <div id="items"></div>
-         </button>
-         <button class="customers-btn-3 customer-btn hidden">Customer
-            <div id="items"></div>
-         </button>
-         <button class="customers-btn-4 customer-btn hidden">Customer
-            <div id="items"></div>
-         </button>
-         <button class="customers-btn-5 customer-btn hidden">Customer
-            <div id="items"></div>
-         </button>
+         <div id="customer-slot-1" style="display: none;">
+            <button onclick="serveCustomer(1)">Serve</button>
+            <p id="customer-request-1" class="customer-request"></p>
+         </div>
+         <div id="customer-slot-2" style="display: none;">
+            <button onclick="serveCustomer(2)">Serve</button>
+            <p id="customer-request-2" class="customer-request"></p>
+         </div>
+         <div id="customer-slot-3" style="display: none;">
+            <button onclick="serveCustomer(3)">Serve</button>
+            <p id="customer-request-3" class="customer-request"></p>
+         </div>
+         <div id="customer-slot-4" style="display: none;">
+            <button onclick="serveCustomer(4)">Serve</button>
+            <p id="customer-request-4" class="customer-request"></p>
+         </div>
+         <div id="customer-slot-5" style="display: none;">
+            <button onclick="serveCustomer(5)">Serve</button>
+            <p id="customer-request-5" class="customer-request"></p>
+         </div>
       </div>
    </div>
+   <div id="notification" style="display:none; color: #910000;"></div>
 
    <!-- FIREBASE -->
 
    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+   <script src="../../firebase/firestore-game.js"></script>
    <script src="../../js/game.js"></script>
 </body>
 
