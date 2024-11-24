@@ -6,7 +6,7 @@ The Supermarket Game is an engaging game where players manage a virtual supermar
 1. Serve Customers: Customers appear in random slots with requests for items. Click on a customer slot to see the requested item and serve them by having the item in inventory.
 2. Manage Inventory: Visit the shop to buy items and manage stock. Each item costs a specific amount of coins.
 3. Level Up: Gain experience points by serving customers. When you accumulate enough XP, you level up, unlocking new items and earning coins.
-4. Rebirths: Upon completing all 20 levels, you’ll gain a rebirth, resetting levels but with increased rewards and new global challenges.Rebirths: Upon completing all 20 levels, you’ll gain a rebirth, resetting levels but with increased rewards and new global challenges.
+4. Rebirths: Upon completing all 20 levels, you’ll gain a rebirth, resetting levels but with increased rewards and new global challenges.
    * Win Condition: Continue leveling up, unlocking items, and gaining rebirths to challenge global leaderboards.
    * Loss Condition: Running out of coins and inventory might delay progress, but the game doesn’t have a hard loss state.
 
